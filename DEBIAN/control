@@ -1,0 +1,11 @@
+Package: go-bash-completion
+Priority: optional
+Section: shells
+Installed-Size: 1679
+Maintainer: Kura <kura@kura.io> 
+Architecture: all
+Version: 1.0
+Depends: bash-completion (>=1.0)
+Description: go completions for bash
+Homepage: https://kura.io/go-bash-completion
+Bugs: https://github.com/kura/go-bash-completion/issues
