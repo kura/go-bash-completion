@@ -32,7 +32,7 @@ function _go() {
       ;;
     *)
       files=$(find ${PWD} -mindepth 1 -maxdepth 1 -type f -iname "*.go" -exec basename {} \;)
-      dirs=$(find ${PWD} -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
+      dirs=$(find ${PWD} -mindepth 1 -maxdepth 1 -type d -not -name ".*" -exec basename {} \;)
       repl="${files} ${dirs}"
       COMPREPLY=($(compgen -W "${repl}" -- ${cur}))
       ;;
