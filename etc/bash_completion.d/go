@@ -27,7 +27,7 @@ function _go() {
   cur="${COMP_WORDS[COMP_CWORD]}"
   case "${COMP_WORDS[COMP_CWORD-1]}" in
     "go")
-      comms="build clean doc env bug fix fmt generate get install list run test tool version vet"
+      comms="bug build clean doc env fix fmt generate get install list mod run test tool version vet"
       COMPREPLY=($(compgen -W "${comms}" -- ${cur}))
       ;;
     *)
